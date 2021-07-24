@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Kamiq",
+    "make": "Skoda",
+    "plate": "123XC342342"
+  },
+  {
+    "name": "Stylo",
+    "make": "Fiat",
+    "plate": "213134"
+  },
+  {
+    "name": "Fiesta",
+    "make": "Ford",
+    "plate": "DUMBA55"
+  },
+  {
+    "name": "Focus",
+    "make": "Ford",
+    "plate": "DUMBA552"
+  },
+  {
+    "name": "Corsa",
+    "make": "Opel",
+    "plate": "Something"
+  }
+]
