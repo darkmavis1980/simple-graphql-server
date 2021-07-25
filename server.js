@@ -1,6 +1,7 @@
 const express = require('express');
 const fs = require('fs/promises');
 const path = require('path');
+const cors = require('cors');
 const { graphqlHTTP } = require('express-graphql');
 const { buildSchema } = require('graphql');
 
@@ -8,6 +9,8 @@ const { buildSchema } = require('graphql');
 const app = express();
 
 app.use(express.json());
+
+app.use(cors());
 
 // Create a schema and a root resolver:
 const schema = buildSchema(`
