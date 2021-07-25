@@ -33,7 +33,6 @@ const getCars = async (make = null) => {
 
 const rootValue = {
   cars: async ({make}) => {
-    console.log(make);
     const cars = await getCars(make);
     return cars;
   },
