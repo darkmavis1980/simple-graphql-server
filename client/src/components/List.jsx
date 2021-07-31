@@ -9,7 +9,7 @@ const CarsList = () => {
     const { data: { data: { cars } } } = await axios.post('http://localhost:8080/graphql', {
       query: `
     {
-      cars{
+      cars {
         name
         make
         plate
