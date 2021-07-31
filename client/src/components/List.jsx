@@ -5,8 +5,18 @@ const CarsList = () => {
   const [cars, setCars] = useState([]);
 
   const fetchCars = async () => {
-    const { data } = await axios.get('http://localhost:8080/cars');
-    setCars(data);
+    // const { data } = await axios.get('http://localhost:8080/cars');
+    const { data: { data: { cars } } } = await axios.post('http://localhost:8080/graphql', {
+      query: `
+    {
+      cars{
+        name
+        make
+        plate
+      }
+    }`
+  });
+    setCars(cars);
   }
 
   useEffect(() => {
